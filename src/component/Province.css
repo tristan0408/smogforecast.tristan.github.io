@@ -1,0 +1,216 @@
+.container {
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  min-width: 250px;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.provinceList {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box;
+
+    background-color: rgb(240,240,240);
+}
+
+/* Province Unit */
+
+.provinceUnit {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 2px 2px gray;    
+    width: 80%;
+    aspect-ratio: 5 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stateSidoName {
+    position: absolute;
+    font-size: 2vw;
+    left: 10%;
+    top: 10%;
+}
+
+.smogState {
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vw;
+    text-anchor: middle;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+}
+
+.smogValue {
+    width: 100%;
+    height: 20%;
+    font-size: 1.7vw;
+    top: 60%;
+    left: 50%;
+    margin-left: -50%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dateTime {
+    width: 100%;
+    height: 20%;
+    font-size: 1.7vw;
+    top: 70%;
+    left: 50%;
+    margin-left: -50%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.provinceFavorite {
+    position: absolute;
+    width: 10%;
+    min-width: 10%;
+    right: 7%;
+    margin-top: 3%;
+}
+
+/* Bottom Tab */
+
+.bottomTab {
+    position: fixed;    
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 800px;
+    height: 70px;
+    background-color: rgb(210,210,210);
+    z-index: 10000;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    vertical-align: middle;
+}
+
+.bottomTabItem {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 70px;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bottomTabImage{
+    align-items:center;
+    margin: auto;
+    height: auto;
+    height: auto;
+    display: block;
+}
+
+
+
+/* DropDown */
+
+.dropDownSido {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    position: fixed;
+    z-index: 10000;
+}
+
+.dropdown {
+    width: 150px;
+    position: fixed;
+    z-index: 10000;
+}
+
+.dropDownSidoButton {
+    width: 120px;
+    height: 30px;
+    z-index: 10000;
+    background-color: rgb(190,190,190);
+}
+
+.dropDownButton {
+    width: 120px;
+    height: 30px;
+    z-index: 10000;
+    background-color: rgb(190,190,190);
+}
+
+@keyframes slide-fade-in-dropdown-animation {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-fade-in-dropdown {
+    width: 150px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide-fade-in-dropdown > ul {
+    width: 150px;
+    height: 100vh;
+    animation: slide-fade-in-dropdown-animation .4s ease;
+  }
+  
+  /* fade out */
+  
+  @keyframes slide-fade-out-dropdown-animation {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .slide-fade-out-dropdown {
+    width: 150px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide-fade-out-dropdown > ul {
+    animation: slide-fade-out-dropdown-animation 0.4s ease;
+    animation-fill-mode: forwards;
+  }
+
+  .components-dropdown > ul {
+    position: relative;
+    top: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 0;
+    list-style: none;
+  }
